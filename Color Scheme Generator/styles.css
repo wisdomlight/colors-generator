@@ -1,0 +1,138 @@
+body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.get-colors, .show-scheme, .colors-code {
+    width: 49%
+}
+/* consider adding margins to increas the gap between the three main divs */
+/* 01 GET-COLORS SECTION */
+.get-colors {
+    /* height: 6%; */
+    /* border: 1px solid #a1a1a2; */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+form {
+    /* margin: 40px 0 40px 0; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.visually-hidden { 
+    position: absolute !important; /*removes label from normal flow*/
+    width: 1px !important; /*making label 1x1 pixel box*/
+    height: 1px !important;
+    padding: 0 !important; /*taking out any inner space*/
+    margin: -1px !important; /*moving it slighty*/
+    overflow: hidden !important;/*incase somthing overflows - clip it - keep it invisible*/
+    clip: rect(0,0,0,0) !important; /*create a rectangle of 0 0 0 0 - whatever inside it is visible - but because of the size - nothing is visible!*/
+    white-space: nowrap !important;
+    border: 0 !important;
+    /*this class hides the label
+    by removing from the normal folw with the position
+    then using all kind of properties to make it hidden*/
+}
+input[type="color"] {
+    border-radius: 0;
+    border-width: 0px;
+    block-size: 38px;
+    inline-size: 50px;
+    border-style: solid;
+}
+.select-scheme-box {
+    /* background-color: red; */
+    background-color: transparent;
+    width: 50%;
+    padding: 10px 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+    border: 1px solid #a9a7a0;
+    border-radius: 5px;
+    color: #808080;
+    font-size: 1rem;
+}
+.get-color-scheme-btn {
+    padding: 12px 10px;
+    border: 1px solid #a9a7a0;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #808080;
+    width: 27%;
+    font-size:0.85rem;
+}
+
+
+/* 02 SHOW-SCHEME DIV */       
+.show-scheme {
+    /* border: 1px solid orange; */
+    height: 50vh;
+    display: flex;
+
+}
+.scheme-color {
+    /* border-right: 1px dotted green; */
+    width: 20%;
+    height: 100%;
+}
+#color-0 {
+    background-color: #fff;
+}
+#color-1 {
+    background-color: #fff;
+}
+#color-2 {
+    background-color: #fff;
+}
+#color-3 {
+    background-color: #fff;
+}
+#color-4 {
+    background-color: #fff;
+}
+
+/* 03 COLORS-CODE DIV */
+.colors-code {
+    display: flex;
+    justify-content: space-evenly;
+    /* gap: 40px; */
+    /* border: 1px solid #0f0; */
+}
+.code-0 {
+    color: #a5a5a5;
+    font-weight: bold;
+    /* width: 15%; */
+}
+.code-1 {
+    color: #a5a5a5;
+    font-weight: bold;
+    /* width: 15%; */
+}
+.code-2 {
+    color: #a5a5a5;
+    font-weight: bold;
+    /* width: 15%; */
+}
+.code-3 {
+    color: #a5a5a5;
+    font-weight: bold;
+    /* width: 15%; */
+}
+.code-4 {
+    color: #a5a5a5;
+    font-weight: bold;
+    /* width: 15%; */
+}
